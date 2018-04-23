@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 waveLoadingView.setProgressValue(progress);
                 if (progress < 30){
                     waveLoadingView.setWaveColor(-65536);
+                }else if (progress > 85){
+                    waveLoadingView.setWaveColor(-65536);
                 }else{
                     waveLoadingView.setWaveColor(Color.parseColor("#059bff"));
                 }

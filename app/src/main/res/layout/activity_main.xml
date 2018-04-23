@@ -8,37 +8,98 @@
     android:orientation="vertical"
     tools:context="com.example.sardor.waterwave.MainActivity">
 
-   <me.itangqi.waveloadingview.WaveLoadingView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/waterWave"
-       app:wlv_shapeType="circle"
-       app:wlv_borderWidth="3dp"
-       app:wlv_round_rectangle="true"
-       app:wlv_triangle_direction="north"
-       app:wlv_borderColor="@color/colorWave"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
 
-       app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
-       app:wlv_titleCenterStrokeWidth="3dp"
-       app:wlv_titleCenterColor="@android:color/white"
-       app:wlv_titleCenterSize="24dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant 1"
+            android:textColor="@color/colorAccent"
+            android:textSize="24dp"
+            android:textStyle="bold"
+           android:layout_marginLeft="40dp"/>
 
-       app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
-       app:wlv_titleTopStrokeWidth="3dp"
-       app:wlv_titleTopColor="@android:color/white"
-       app:wlv_titleTopSize="24dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant 2"
+            android:textColor="@color/colorAccent"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="125dp"/>
+    </LinearLayout>
 
-       app:wlv_titleBottomStrokeColor="@android:color/holo_blue_dark"
-       app:wlv_titleBottomStrokeWidth="3dp"
-       app:wlv_titleBottomColor="@android:color/white"
-       app:wlv_titleBottomSize="24dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-       app:wlv_waveAmplitude="70"
-       app:wlv_waveColor="@color/colorWave"
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:id="@+id/waterWave1"
+            app:wlv_shapeType="square"
+            app:wlv_borderWidth="1dp"
+            app:wlv_round_rectangle="true"
+            app:wlv_triangle_direction="north"
+            app:wlv_borderColor="@color/colorWave"
+
+            app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleCenterStrokeWidth="3dp"
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="24dp"
+
+            app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleTopStrokeWidth="3dp"
+            app:wlv_titleTopColor="@android:color/white"
+            app:wlv_titleTopSize="24dp"
+
+            app:wlv_titleBottomStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleBottomStrokeWidth="3dp"
+            app:wlv_titleBottomColor="@android:color/white"
+            app:wlv_titleBottomSize="24dp"
+
+            app:wlv_waveAmplitude="70"
+            app:wlv_waveColor="@color/colorWave"/>
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:id="@+id/waterWave2"
+            app:wlv_shapeType="square"
+            app:wlv_borderWidth="1dp"
+            app:wlv_round_rectangle="true"
+            app:wlv_triangle_direction="north"
+            app:wlv_borderColor="@color/colorWave"
+
+            app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleCenterStrokeWidth="3dp"
+            app:wlv_titleCenterColor="@android:color/white"
+            app:wlv_titleCenterSize="24dp"
+
+            app:wlv_titleTopStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleTopStrokeWidth="3dp"
+            app:wlv_titleTopColor="@android:color/white"
+            app:wlv_titleTopSize="24dp"
+
+            app:wlv_titleBottomStrokeColor="@android:color/holo_blue_dark"
+            app:wlv_titleBottomStrokeWidth="3dp"
+            app:wlv_titleBottomColor="@android:color/white"
+            app:wlv_titleBottomSize="24dp"
+
+            app:wlv_waveAmplitude="70"
+            app:wlv_waveColor="@color/colorWave"/>
 
 
+    </LinearLayout>
 
-       />
 
     <SeekBar
         android:id="@+id/seekBar"
